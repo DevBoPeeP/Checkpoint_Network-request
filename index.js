@@ -11,7 +11,7 @@ const fetchWeatherHandler = () => {
   navigator.geolocation.getCurrentPosition(
     async () => {
       const city = document.getElementById("cityInput").value;
-      const apiKey = "cf8e0986b1089c4dee981d19c987d39d";
+      // const apiKey = "YOUR APIKEY GOES HERE";
       const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
       const response = await fetch(apiURL);
